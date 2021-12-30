@@ -1,0 +1,29 @@
+
+#projets{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    
+}
+
+#projets a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#projets a:nth-child(2n+1) li{
+ 
+    background-color: rgb(255,255,255,0.1);
+}
+
+#projets a li{
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 50px;
+}
+
+#projets a li:hover{
+    background-color: rgb(255,255,255,0.5);    
+}
+

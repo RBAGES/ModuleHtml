@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Ma présentation</title>
 </head>
 <body>
@@ -30,9 +31,25 @@
     <section id="corps">
 
         <div id="corps-contact" class="marged">
-            <p><a href="mailto:bagesremy@gmail.com">Mon mail</a></p>
-            <p><a target="_blank" href="https://github.com/RBAGES">Mon github</a></p>
+            <p><a href="mailto:bagesremy@gmail.com">Mon mail <img alt="icon github" class="icon invert" src="img/mail.png"></a></p>
+            <p><a target="_blank" href="https://github.com/RBAGES">Mon github <img alt="icon github" class="icon invert" src="img/github-icon.png"></a></p>
         </div>
+    </section>
+
+    <section class="formulaire-contact bg-corps full-padded" >
+        <h2>Me contacter</h2>
+        <form action="" method="post">
+            <label for="i-nom">Votre nom</label>
+            <input id="i-nom" type="text" name="nom" placeholder="Tartempion"> <br>
+            <label for="i-objet">Objet du message</label>
+            <input id="i-objet" type="text" name="nom"> <br>
+            <label for="i-message">Votre Message:</label>
+            <p class="textarea-container" >
+                <textarea id="i-message" name="i-message" cols="67" rows="12"></textarea>
+            </p>
+            <input type="submit">
+
+        </form>
     </section>
 
     <footer>

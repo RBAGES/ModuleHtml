@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/carousel.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/carousel.css">
     <title>Ma présentation</title>
 </head>
+
 <body>
-<div id="page-wrap">
-    
-    <header>
+    <div id="page-wrap">
 
-        <div id="entete-nom" class="glow">
-            <h1> Rémy Bages </h1>
-            <p>Développeur web Fullstack</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="glow">Accueil</a></li>
-                <li>|<a href="presentation.html">Présentation</a></li>
-                <li>|<a href="projets.html">Projets</a></li>
-                <li>|<a href="contact.html">Contact</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+        <header>
 
-    <section id="corps">
-        <div class="bg-corps marged padded">
-            <h1>Bienvenue!</h1>
-            <p>Ceci est mon site perso qui me servira à me présenter et à montrer mes projets</p>
-        </div>
-        
-    </section>
+            <div id="entete-nom" class="glow">
+                <h1> Rémy Bages </h1>
+                <p>Développeur web Fullstack</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="glow">Accueil</a></li>
+                    <li>|<a href="presentation.html">Présentation</a></li>
+                    <li>|<a href="projets.html">Projets</a></li>
+                    <li>|<a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corps">
+            <div class="bg-corps marged padded">
+                <h1>Bienvenue!</h1>
+                <p>Ceci est mon site perso qui me servira à me présenter et à montrer mes projets</p>
+            </div>
+
+        </section>
+
+        <section class="section-carousel bg-corps marged">
+            <h2>Activities</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img alt="car" src="img/frontend.png" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img alt="car" src="img/backend.png" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img alt="car" src="img/security.webp" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img alt="car" src="img/ma-chaine-youtube.png" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+
+
 
     <footer>
         <p>Ceci est un footer.</p>
@@ -42,9 +89,10 @@
 
 
 
-</div>
+    </div>
 
 
 
 </body>
+
 </html>

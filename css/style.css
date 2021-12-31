@@ -1,14 +1,7 @@
 
 
 /* #region header */
-a{
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    text-shadow: 0 0 5px  white;
 
-}
 
 header{
     background:  url('../img/code2.gif') no-repeat  ;
@@ -46,19 +39,11 @@ header h1{
     text-transform: uppercase;
 }
 
-header a{
-    text-decoration: none;
-    color: white;
-}
-
-header a:hover{
-    text-shadow: 0 0 5px  white;
-    /* text-decoration: underline; */
-}
 
 /* #endregion */
 
 /* #region corps */
+
 body{
     font-family: 'fira', sans-serif;
     background-color: grey;
@@ -68,7 +53,6 @@ body{
 #page-wrap{
     width: 1200px;
     margin: auto;
-    /* background-color: #233859; */
     background-image: linear-gradient(rgba(35, 56, 89, 0.9), rgba(35, 56, 89, 0.9)), url('../img/code4.jpg');
     background-repeat:no-repeat;
     background-size: contain;
@@ -79,7 +63,6 @@ body{
 
 section#corps{
     margin-top : 30px;
-    
 }
 
 div#corps-presentation{
@@ -131,6 +114,9 @@ div.div-comp{
     padding:30px;
     padding-top: 0;
 }
+.full-padded{
+    padding:30px;
+}
 
 .invert{
     filter: invert(100%);
@@ -139,6 +125,13 @@ div.div-comp{
     width: 25px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-shadow: 0 0 5px  white;
+}
 
 
 /* #endregion  */

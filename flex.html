@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLex</title>
+</head>
+<body>
+	<style>
+		.section1{
+			height:  500px;
+			width:  50%;
+			border:  2px solid red;
+			margin: 0 auto;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            background:linear-gradient(#9198e5,#e66465);;
+
+		}
+
+        p{
+            align-self: center;
+        }
+
+        .section1 :nth-child(n+6){
+            margin-left: 20px;
+        }
+
+		.section2{
+			height:  1500px;
+			width:  100%;
+			border:  2px solid red;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: space-evenly;
+            background: linear-gradient(0.25turn,black, rgb(119, 119, 119), black);
+		}
+
+        .section2 .boite2:nth-child(n+7){
+            margin-top: 45px;
+        }
+
+		.boite1{
+            background-color: greenyellow;
+			height: 150px;
+			width:  150px;
+			border:  2px solid black;
+            box-shadow: 0 0 10px black;
+            background: url('img/pencil.png') center no-repeat,linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+            /* flex:1; */
+		}	
+
+		.boite2{
+			height: 250px;
+			width:  250px;
+			border:  2px solid rgb(19, 32, 22);
+            box-shadow: 0 0 50px white inset;
+            background: url('img/rick-roll.gif');
+            background-size: cover;
+			animation: test 1s infinite;
+		}
+
+		@keyframes test {
+			0%{transform: translateX(0px); }
+			50%{transform: translateX(-20px);border-color: red;box-shadow: 0 0 20px red;}
+			75%{transform: translateX(20px); border-color: blue;box-shadow: 0 0 20px blue;}
+			100%{transform: translateX(0px);border-color: black;box-shadow: 0 0 20px black;}
+		}
+
+	</style>
+
+	<section class="section1">
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+		<div class="boite1"></div>
+	</section>
+	<br>
+	<section class="section2">
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+		<div class="boite2"></div>
+	</section>
+</body>
+</html>

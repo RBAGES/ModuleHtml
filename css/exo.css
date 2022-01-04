@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+a,
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+    color: #3e5bed;
+}
+/* ------------------------------ */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+nav p{
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    
+}
+
+nav p a{
+    color: #ff6844!important;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-weight: 600;
+    flex-direction: column;
+}
+.nav-button{
+    align-self: flex-start;
+}
+
+nav p a:hover{
+    border-top: 1px solid #ff6844;
+}
+
+/* ----------------- */
+
+header{
+    display: flex;
+    height: 96px;
+    background-color: transparent;
+    align-items: flex-end;
+    float: top;
+}
+
+.logo{
+    height: 56px;
+    width: 56px;
+}
+
+.entete-p{
+    margin-left: 2%;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.entete-p p{
+    margin-left: 20px;
+}
+
+.bloc{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    margin-top: 5px;
+    
+}
+
+.bloc1{
+    margin-top: -100px;
+    background-image: linear-gradient(90deg, #f5f6f5, rgba(240, 245, 246, 0.1) 40%, rgba(240, 245, 246, 0.1) 80%, #f5f6f5), url("https://uploads-ssl.webflow.com/5e8e7e62cbdf9b04af7a62f8/5e96adaeebba5daa3426e6a2_thumbnail-daydream_view.jpg");
+    background-position: 0px 0px, 35% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+}
+
+.bloc2{
+    background-image: linear-gradient(90deg, #f5f6f5, rgba(240, 245, 246, 0.1) 40%, rgba(240, 245, 246, 0.1) 80%, #f5f6f5), url("https://uploads-ssl.webflow.com/5e8e7e62cbdf9b04af7a62f8/5e96a58bebba5d6cea26cd15_thumbnail-cardboard.jpg");
+background-position: 0px 0px, 50% 50%;
+background-size: auto, cover;
+background-repeat: repeat, no-repeat;
+}
+
+.texte{
+    width: 350px;
+    margin-left: 100px;
+    opacity: 0;
+    animation: out 1s;
+    line-height: 30px;
+}
+
+.bloc:hover .texte{
+    animation: in 1s forwards;
+}
+
+.bloc:hover .after{
+    height: 1px;
+    width: 100px;
+    background: black;
+    animation: afterdiv 2s forwards;
+}
+
+.texte h1{
+    margin-bottom: 20px;
+}
+
+@keyframes afterdiv{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+@keyframes in {
+    0%{opacity: 0;position: absolute;left: -100%;;}
+    10%{opacity: 0.1;}
+    20%{opacity: 0.2;}
+    30%{opacity: 0.3;}
+    40%{opacity: 0.3;}
+    50%{opacity: 0.3;}
+    60%{opacity: 0.6;}
+    70%{opacity: 0.6;}
+    80%{opacity: 0.8;}
+    90%{opacity: 0.8;}
+    100%{opacity: 1;position: absolute; left:0;}    
+}
+
+@keyframes out {
+    0%{opacity: 1;position: absolute;left: 0;;}
+
+    100%{opacity: 0;position: absolute; left:-100%;}
+    
+}

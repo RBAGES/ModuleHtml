@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- pour charger les icone font awesome-->
     <title>Ma présentation</title>
 </head>
 <body>
@@ -38,14 +39,14 @@
 
     <section class="formulaire-contact bg-corps full-padded" >
         <h2>Me contacter</h2>
-        <form action="" method="post">
+        <form action="mailer.php" method="get">
             <label for="i-nom">Votre nom</label>
-            <input id="i-nom" type="text" name="nom" placeholder="Tartempion"> <br>
+            <input id="i-nom" type="text" name="fname" placeholder="Tartempion" required> <br>
             <label for="i-objet">Objet du message</label>
-            <input id="i-objet" type="text" name="nom"> <br>
+            <input id="i-objet" type="text" name="lname"> <br>
             <label for="i-message">Votre Message:</label>
             <p class="textarea-container" >
-                <textarea id="i-message" name="i-message" cols="67" rows="12"></textarea>
+                <textarea id="i-message" name="mail" cols="67" rows="12"></textarea>
             </p>
             <input type="submit">
 

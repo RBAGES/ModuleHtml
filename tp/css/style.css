@@ -147,6 +147,16 @@ header h1 {
 .shadow-wrap{
     position: relative;
 }
+/* Pour empêcher l'utilisateur de sauvegarder ou de regarder l'image dans un nouvel onglet */
+.shadow-wrap:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+  }
 
 .img-shadow{
     position: absolute;
@@ -154,6 +164,7 @@ header h1 {
     height: 100%;
     right: 2px;
     opacity: 0.8;
+    user-select: none;
 }
 
 /* .img-banner::after {
